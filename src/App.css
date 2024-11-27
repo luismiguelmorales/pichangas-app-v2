@@ -1,0 +1,12 @@
+/* src/App.css */
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.player {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
