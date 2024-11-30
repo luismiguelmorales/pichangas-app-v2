@@ -14,7 +14,7 @@ const PlayerList = () => {
       setError(null);
 
       try {
-        const response = await fetch('https://o6d92f4k6j.execute-api.us-east-1.amazonaws.com/default/get-players-lambda');
+        const response = await fetch('https://azwbhjr7o3.execute-api.us-east-1.amazonaws.com/default/get-players-lambda');
         const data = await response.json();
         setPlayers(data);
       } catch (error) {
