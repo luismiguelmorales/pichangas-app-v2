@@ -29,9 +29,9 @@ const PlayerList = () => {
 
   return (
     <div className="player-list">
-      {players.map((player, index) => (
+      {Array.isArray(players) ? players.map((player, index) => (
         <Player key={index} name={player.name} />
-      ))}
+      )) : null}
     </div>
   );
 };
