@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MatchCard() {
+export default function MatchCard({ match }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -17,19 +17,19 @@ export default function MatchCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Sábado 07 de Diciembre
+          {match.date}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Partido amistoso de la promoción 2013 de la Universidad Nacional de Ingeniería
+          {match.description}
         </Typography>
         <Typography variant="h5" component="div">
-          Campo de Marte
+          {match.location}
         </Typography>
         <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>11:00 AM</Typography>
         <Typography variant="body2">
-          Equipos de 6 vs 6
+          Equipos de {match.teamSize} vs {match.teamSize}
           <br />
-          {'s/. 11.00'}
+          {`s/. ${match.price}`}
         </Typography>
       </CardContent>
       <CardActions>

@@ -1,12 +1,11 @@
 // src/App.js
 import React from 'react';
-import PlayerList from './components/PlayerList';
-import MatchCard from './components/matchCard';
+import MatchesList from './components/MatchesList';
 
 function App() {
   return (
     <div className="App">
-      <MatchCard />
+      <MatchesList />
     </div>
   );
 }
