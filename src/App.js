@@ -1,11 +1,15 @@
-// src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import MatchesList from './components/MatchesList';
+import PlayerForm from './components/PlayerForm';
 
 function App() {
+  const [formOpen, setFormOpen] = useState(false);
+
   return (
     <div className="App">
-      <MatchesList />
+      {
+        formOpen ? <PlayerForm setFormOpen={setFormOpen} /> : <MatchesList setFormOpen={setFormOpen} />
+      }
     </div>
   );
 }

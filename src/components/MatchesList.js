@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import MatchCard from './MatchCard';
 
-const MatchesList = () => {
+const MatchesList = ({ setFormOpen }) => {
   const [matches, setMatches] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -29,7 +29,7 @@ const MatchesList = () => {
   return (
     <div className="matches-list">
       {Array.isArray(matches) ? matches.map((match, index) => (
-        <MatchCard key={index} match={match} />
+        <MatchCard key={index} match={match} setFormOpen={setFormOpen} />
       )) : null}
     </div>
   );
