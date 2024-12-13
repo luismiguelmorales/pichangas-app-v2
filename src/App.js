@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import MatchesList from './components/MatchesList';
-import PlayerForm from './components/PlayerForm';
+import './App.css';
 
-function App() {
-  const [formOpen, setFormOpen] = useState(false);
-
+function MyButton() {
   return (
-    <div className="App">
-      {
-        formOpen ? <PlayerForm setFormOpen={setFormOpen} /> : <MatchesList setFormOpen={setFormOpen} />
-      }
-    </div>
+    <button>
+      I'm a button
+    </button>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <div>
+      <div className='rect'>RECTANGLE</div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}

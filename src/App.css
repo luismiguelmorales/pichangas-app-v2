@@ -1,12 +1,9 @@
-/* src/App.css */
-.player-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.player {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
+.rect {
+  background-color: #e33244;
+  height: 200px;
+  color: white;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-left: 50px;
 }
